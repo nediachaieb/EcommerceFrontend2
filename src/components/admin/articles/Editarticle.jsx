@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import axios from 'axios';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -42,7 +44,7 @@ export default function Editarticle({ initialArticle, modifarticle }) {
       setScategories(res.data)
     })
   };
-  
+
   ////
   const handleSave = async (e) => {
     try {

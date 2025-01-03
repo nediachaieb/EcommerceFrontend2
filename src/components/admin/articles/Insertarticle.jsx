@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import axios from 'axios';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -28,7 +29,7 @@ const style = {
 
 export default function Insertarticle({ ajoutarticle }) {
   const [files, setFiles] = useState([]);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [article, setArticle] = useState({});

@@ -1,4 +1,6 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import * as React from 'react';
 import { useMemo } from 'react';
 import { MaterialReactTable, useMaterialReactTable, } from 'material-react-table';
 import { Box } from '@mui/material';
@@ -6,6 +8,7 @@ import { Button } from 'react-bootstrap';
 import "@fortawesome/fontawesome-free/css/all.css";
 import Editarticle from './Editarticle';
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const Affichearticle = ({ articles, deleteProduct, modifarticle }) => {
     const columns = useMemo(
         () => [

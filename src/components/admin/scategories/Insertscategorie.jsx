@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import axios from 'axios';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -26,7 +28,7 @@ const style = {
   p: 4,
 };
 
-export default function Insertscategorie({ ajoutscategorie }) {
+export default function Insertscategorie({ ajoutScategorie }) {
   const [files, setFiles] = useState([]);
   const [open, setOpen] = useState(false);
   const [scategorie, setScategorie] = useState({});
@@ -50,7 +52,7 @@ export default function Insertscategorie({ ajoutscategorie }) {
       await addscategorie(scategorie)
         .then(res => {
           handleClose();
-          ajoutscategorie(res.data); // Passer la sous-catégorie ajoutée à la fonction parent
+          ajoutScategorie(res.data); // Passer la sous-catégorie ajoutée à la fonction parent
           vider();
         });
     } catch (error) {
